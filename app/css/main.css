@@ -145,6 +145,9 @@ button:focus {
 .slick-next {
   right: 15px; }
 
+section {
+  padding: 200px 0; }
+
 /*==========  Header  ==========*/
 header {
   display: -webkit-box;
@@ -195,9 +198,23 @@ header {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
   header .scroll {
     display: block;
-    bottom: 0;
-    margin: 0 auto; }
-  header i {
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+    margin: 0 auto 40px; }
+    header .scroll i {
+      font-size: 40px;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+
+/*==========  About  ==========*/
+#about .about-fst {
+  height: 250px;
+  background-image: url(../img/top-bg.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+#about .about-scnd {
+  height: 250px;
+  background-image: url(../img/top-bg.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
