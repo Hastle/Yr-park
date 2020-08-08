@@ -42,4 +42,9 @@ $(document).ready(function() {
 		margin: 10
 	});
 
+	$('[data-fancybox="images"]').fancybox({
+		transitionEffect: "slide",
+		loop: false
+	});
+
 });

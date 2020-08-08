@@ -146,7 +146,14 @@ button:focus {
   right: 15px; }
 
 section {
-  padding: 200px 0; }
+  padding: 100px 0; }
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000; }
+  h3 .text-center {
+    text-align: center; }
 
 /*==========  Header  ==========*/
 header {
@@ -176,7 +183,8 @@ header {
     -webkit-align-content: center;
         -ms-flex-line-pack: center;
             align-content: center;
-    height: 80px; }
+    height: 80px;
+    margin: 10px 0 0; }
     header .nav-list .main-menu {
       list-style: none;
       display: -webkit-box;
@@ -205,16 +213,151 @@ header {
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
 /*==========  About  ==========*/
-#about .about-fst {
-  height: 250px;
-  background-image: url(../img/top-bg.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-          background-size: cover; }
+#about {
+  background-color: #efeeee; }
+  #about .about-fst {
+    height: 250px;
+    background-image: url(../img/top-bg.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  #about .about-scnd {
+    height: 250px;
+    background-image: url(../img/top-bg.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  #about .ticket {
+    margin: 50px 0 0; }
+    #about .ticket:first-child {
+      margin: 0; }
 
-#about .about-scnd {
-  height: 250px;
-  background-image: url(../img/top-bg.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-          background-size: cover; }
+/*==========  Gallery  ==========*/
+#gallery .grid-section {
+  display: grid;
+  max-width: 100%;
+  height: 600px;
+  grid-template-columns: 35% 21% 44%;
+  grid-template-rows: 40% 12% 22% 26%;
+  grid-gap: 0; }
+
+#gallery .grid-item {
+  position: relative;
+  overflow: hidden; }
+  #gallery .grid-item:nth-child(1) {
+    grid-row: 1 / 2; }
+  #gallery .grid-item:nth-child(2) {
+    grid-row: 1 / 3;
+    grid-column: 2 / 4; }
+  #gallery .grid-item:nth-child(3) {
+    grid-row: 2 / 5; }
+  #gallery .grid-item:nth-child(4) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3; }
+  #gallery .grid-item:nth-child(5) {
+    grid-row: 3 / 5;
+    grid-column: 3 / 4; }
+  #gallery .grid-item:nth-child(6) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3; }
+  #gallery .grid-item img {
+    display: inline-block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%; }
+
+/*==========  Contacts  ==========*/
+#contacts {
+  background-color: #efeeee; }
+  #contacts .enter {
+    display: inline-block;
+    border: 1px solid #c9c9c9;
+    margin-top: 50px; }
+  #contacts .info {
+    padding: 40px 30px;
+    border-right: 1px solid #c9c9c9; }
+  #contacts .pull {
+    display: inline-block; }
+    #contacts .pull i {
+      color: #ed7e01;
+      margin-right: 10px; }
+  #contacts .soc-links {
+    padding: 15px 0; }
+    #contacts .soc-links a {
+      background-color: #c9c9c9;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      display: inline-grid;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center;
+      margin: 0 5px; }
+    #contacts .soc-links i {
+      font-size: 30px;
+      color: #fff; }
+  #contacts form {
+    display: inline-block;
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center; }
+    #contacts form i {
+      margin-left: 30px; }
+    #contacts form .action {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: 1px solid  #222;
+      color: #222; }
+    #contacts form .form-ent, #contacts form textarea {
+      display: inline-block;
+      color: #959595;
+      width: 100%;
+      padding: 15px 10px;
+      margin-bottom: 15px;
+      resize: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #c9c9c9; }
+      #contacts form .form-ent::-webkit-input-placeholder, #contacts form textarea::-webkit-input-placeholder {
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent:-moz-placeholder, #contacts form textarea:-moz-placeholder {
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent::-moz-placeholder, #contacts form textarea::-moz-placeholder {
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent:-ms-input-placeholder, #contacts form textarea:-ms-input-placeholder {
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent:focus, #contacts form textarea:focus {
+        border: 1px solid #c9c9c9;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        #contacts form .form-ent:focus::-webkit-input-placeholder, #contacts form textarea:focus::-webkit-input-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        #contacts form .form-ent:focus:-moz-placeholder, #contacts form textarea:focus:-moz-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        #contacts form .form-ent:focus::-moz-placeholder, #contacts form textarea:focus::-moz-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        #contacts form .form-ent:focus:-ms-input-placeholder, #contacts form textarea:focus:-ms-input-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+    #contacts form textarea {
+      height: 140px; }
