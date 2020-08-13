@@ -101,15 +101,19 @@ button:focus
 	left: 15px
 .slick-next
 	right: 15px
-
+/*==========  General  ==========*/
 section
 	padding: 100px 0
 h3
+	+regular
 	font-size: 25px
 	text-transform: uppercase
 	color: #000
- .text-center
- 	text-align: center
+p
+	+regular
+	font-size: 17px
+.text-center
+	text-align: center
 /*==========  Header  ==========*/
 header
 	display: flex
@@ -129,9 +133,10 @@ header
 			margin-right: 30px
 		a
 			color: #fff
+			+bold
 			padding: 15px 11px
 			font-size: 18px
-			text-transform: uppercase
+			//text-transform: uppercase
 			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
 	
 	h3
@@ -163,39 +168,24 @@ header
 		margin: 50px 0 0
 		&:first-child
 			margin: 0
+	h4
+		+regular
+		font-size: 20px
 /*==========  Gallery  ==========*/
 #gallery
-	.grid-section
-		display: grid
-		max-width: 100%
-		height: 600px
-		grid-template-columns: 35% 21% 44%
-		grid-template-rows: 40% 12% 22% 26%
-		grid-gap: 0
-	.grid-item
-		position: relative
+	.overlay
+		display: inline-block
 		overflow: hidden
-		&:nth-child(1)
-			grid-row: 1 / 2
-		&:nth-child(2)
-			grid-row: 1 / 3
-			grid-column: 2 / 4
-		&:nth-child(3)
-			grid-row: 2 / 5
-		&:nth-child(4)
-			grid-row: 3 / 4
-			grid-column: 2 / 3
-		&:nth-child(5)
-			grid-row: 3 / 5
-			grid-column: 3 / 4
-		&:nth-child(6)
-			grid-row: 4 / 5
-			grid-column: 2 / 3
-		img
-			display: inline-block
-			object-fit: cover
-			height: 100%
-			width: 100%
+	figure
+		margin: 0 0 1rem
+	a
+		display: block !important
+		margin-bottom: 1.5rem
+		overflow: hidden
+	img
+	 	max-width: 100%
+	 	height: auto
+	 	vertical-align: middle
 /*==========  Map  ==========*/
 #mappic
 	margin: 0
