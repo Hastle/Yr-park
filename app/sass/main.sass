@@ -196,6 +196,37 @@ header
 			object-fit: cover
 			height: 100%
 			width: 100%
+/*==========  Map  ==========*/
+#mappic
+	margin: 0
+	padding: 0
+	position: relative
+	.map
+		position: relative
+		margin: 0 auto
+		text-align: center
+		height: 100%
+		width: 100%
+		max-width: 800px
+	svg
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+	.part 
+		opacity: .3
+		&:hover
+			opacity: .6
+			+flow
+	.description
+		display: none
+		position: absolute
+		padding: 20px
+		width: 300px
+		height: 400px
+		box-shadow: 0 0 32px 10px #ccc
+		bottom: calc(50% - 200px)
 /*==========  Contacts  ==========*/
 #contacts
 	background-color: #efeeee
@@ -259,3 +290,16 @@ header
 				+flow-slow(.5s)
 		textarea
 			height: 140px
+/*==========  Magnific Popup  ==========*/
+.white-popup-block
+	background: #FFF
+	padding: 50px
+	text-align: left
+	max-width: 650px
+	margin: 40px auto
+	position: relative
+	h1
+		margin: 30px 0
+		font-size: 30px
+	img
+		margin-top: 1em
