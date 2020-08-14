@@ -153,11 +153,15 @@ h3 {
   font-family: "GothamRegular";
   font-size: 25px;
   text-transform: uppercase;
-  color: #000; }
+  color: #000;
+  display: inline-block;
+  border-bottom: 2px solid #59c45a;
+  padding-bottom: 10px;
+  margin: 0; }
 
 p {
-  font-family: "GothamRegular";
-  font-size: 17px; }
+  font-family: "GothaProLig";
+  font-size: 16px; }
 
 .text-center {
   text-align: center; }
@@ -190,8 +194,7 @@ header {
     -webkit-align-content: center;
         -ms-flex-line-pack: center;
             align-content: center;
-    height: 80px;
-    margin: 10px 0 0; }
+    height: 80px; }
     header .nav-list .main-menu {
       list-style: none;
       display: -webkit-box;
@@ -205,96 +208,117 @@ header {
       font-family: "GothamBold";
       padding: 15px 11px;
       font-size: 18px;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  header h3 {
+      text-decoration: none;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+      position: relative; }
+      header .nav-list a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        height: 2px;
+        width: 100%;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        background: #59c45a;
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+      header .nav-list a:hover:before {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+        -webkit-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s; }
+  header h2 {
     color: #fff;
+    font-family: "GothamRegular";
     font-size: 40px;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  header .scroll {
+  header .b-arrow {
     display: block;
     margin: 0 auto 40px; }
-    header .scroll i {
+    header .b-arrow i {
       font-size: 40px;
       color: #fff;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
 /*==========  About  ==========*/
-#about {
-  background-color: #efeeee; }
-  #about .about-fst {
-    height: 250px;
-    background-image: url(../img/top-bg.jpg);
-    background-position: center center;
-    -webkit-background-size: cover;
-            background-size: cover; }
-  #about .about-scnd {
-    height: 250px;
-    background-image: url(../img/top-bg.jpg);
-    background-position: center center;
-    -webkit-background-size: cover;
-            background-size: cover; }
-  #about .ticket {
-    margin: 50px 0 0; }
-    #about .ticket:first-child {
-      margin: 0; }
-  #about h4 {
-    font-family: "GothamRegular";
-    font-size: 20px; }
+#about .about-fst {
+  height: 250px;
+  background-image: url(../img/top-bg.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+#about .about-scnd {
+  height: 250px;
+  background-image: url(../img/top-bg.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+#about .ticket {
+  margin: 50px 0 0; }
+  #about .ticket:first-child {
+    margin: 0; }
+
+#about h4 {
+  font-family: "GothamRegular";
+  font-size: 20px; }
 
 /*==========  Gallery  ==========*/
-#gallery .overlay {
-  display: inline-block;
-  overflow: hidden; }
+#gallery {
+  background-color: #efeeee; }
+  #gallery .overlay {
+    display: inline-block;
+    overflow: hidden; }
+  #gallery .collapse {
+    margin: 50px 0 0; }
+  #gallery figure {
+    margin: 0 0 1rem; }
+  #gallery a {
+    display: block !important;
+    margin-bottom: 1.5rem;
+    overflow: hidden; }
+  #gallery img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; }
 
-#gallery figure {
-  margin: 0 0 1rem; }
-
-#gallery a {
-  display: block !important;
-  margin-bottom: 1.5rem;
-  overflow: hidden; }
-
-#gallery img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle; }
-
-/*==========  Map  ==========*/
-#mappic {
+/*==========  Offer  ==========*/
+#offer {
   margin: 0;
-  padding: 0;
-  position: relative; }
-  #mappic .map {
+  padding-bottom: 0; }
+  #offer .map {
     position: relative;
     margin: 0 auto;
     text-align: center;
     height: 100%;
     width: 100%;
     max-width: 800px; }
-  #mappic svg {
+  #offer svg {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%; }
-  #mappic .part {
-    opacity: .3; }
-    #mappic .part:hover {
-      opacity: .6;
+  #offer .part {
+    opacity: .5; }
+    #offer .part:hover {
+      opacity: .7;
       -webkit-transition: all .25s;
       -o-transition: all .25s;
       transition: all .25s; }
-  #mappic .description {
-    display: none;
-    position: absolute;
-    padding: 20px;
-    width: 300px;
-    height: 400px;
-    -webkit-box-shadow: 0 0 32px 10px #ccc;
-            box-shadow: 0 0 32px 10px #ccc;
-    bottom: -webkit-calc(50% - 200px);
-    bottom: calc(50% - 200px); }
+
+/*==========  Map  ==========*/
+#map {
+  padding: 0; }
 
 /*==========  Contacts  ==========*/
 #contacts {
@@ -309,25 +333,37 @@ header {
   #contacts .pull {
     display: inline-block; }
     #contacts .pull i {
-      color: #ed7e01;
+      color: #59c45a;
       margin-right: 10px; }
   #contacts .soc-links {
     padding: 15px 0; }
     #contacts .soc-links a {
-      background-color: #c9c9c9;
+      background-color: #59c45a;
+      border: 1px solid  #40a941;
+      color: #fff;
       -webkit-border-radius: 5px;
               border-radius: 5px;
       display: inline-grid;
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
       text-align: center;
       -webkit-align-content: center;
           -ms-flex-line-pack: center;
               align-content: center;
       margin: 0 5px; }
+      #contacts .soc-links a:hover {
+        background-color: #fff;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+        #contacts .soc-links a:hover i {
+          color: #59c45a;
+          -webkit-transition: all .25s;
+          -o-transition: all .25s;
+          transition: all .25s; }
     #contacts .soc-links i {
-      font-size: 30px;
-      color: #fff; }
+      color: #fff;
+      font-size: 18px; }
   #contacts form {
     display: inline-block;
     width: 100%;
@@ -338,12 +374,22 @@ header {
     #contacts form .action {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #fff;
-      border: 1px solid  #222;
-      color: #222; }
+      background-color: #59c45a;
+      font-family: "GothamRegular";
+      border: 1px solid  #40a941;
+      color: #fff;
+      font-family: "GothamRegular"; }
+      #contacts form .action:hover {
+        background-color: #fff;
+        color: #59c45a;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
     #contacts form .form-ent, #contacts form textarea {
       display: inline-block;
       color: #959595;
+      font-size: 14px;
+      font-family: "GothamRegular";
       width: 100%;
       padding: 15px 10px;
       margin-bottom: 15px;
@@ -353,16 +399,20 @@ header {
       border-bottom: 1px solid #c9c9c9; }
       #contacts form .form-ent::-webkit-input-placeholder, #contacts form textarea::-webkit-input-placeholder {
         font-size: 14px;
-        color: #959595; }
+        color: #959595;
+        font-family: "GothamRegular"; }
       #contacts form .form-ent:-moz-placeholder, #contacts form textarea:-moz-placeholder {
         font-size: 14px;
-        color: #959595; }
+        color: #959595;
+        font-family: "GothamRegular"; }
       #contacts form .form-ent::-moz-placeholder, #contacts form textarea::-moz-placeholder {
         font-size: 14px;
-        color: #959595; }
+        color: #959595;
+        font-family: "GothamRegular"; }
       #contacts form .form-ent:-ms-input-placeholder, #contacts form textarea:-ms-input-placeholder {
         font-size: 14px;
-        color: #959595; }
+        color: #959595;
+        font-family: "GothamRegular"; }
       #contacts form .form-ent:focus, #contacts form textarea:focus {
         border: 1px solid #c9c9c9;
         -webkit-transition: all 0.5s;
@@ -398,7 +448,8 @@ header {
   text-align: left;
   max-width: 650px;
   margin: 40px auto;
-  position: relative; }
+  position: relative;
+  font-family: "GothamRegular"; }
   .white-popup-block h1 {
     margin: 30px 0;
     font-size: 30px; }
