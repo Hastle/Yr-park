@@ -1,10 +1,17 @@
+var onLoadHandler = function() {
+	captcha = grecaptcha.render('captcha', {
+		'sitekey' : '6LcKa8AZAAAAAKsNJVeeDPsQqnohAHz7f9f6EZGe',
+		'theme': 'light'
+	});
+}
+
 $(document).ready(function() {
 
 	new WOW().init();
 
-	$("#feedback-1,#feedback-2").submit(function() {
-		var captcha = grecaptcha.getResponse();
-		if (captcha.length == 0) {
+	$("#feedback-1").submit(function() {
+		var response = grecaptcha.getResponse(captcha);
+		if (response.length == 0) {
 			alert("Не пройдена captcha, попробуйте еще раз.")
 		} else {
 			$.ajax({
@@ -14,7 +21,8 @@ $(document).ready(function() {
 			}).done(function() {
 				$.magnificPopup.close();
 				alert("Ваше сообщение успешно отправено!");
-				$('#feedback-1')[0].reset();
+				$("#feedback-1")[0].reset();
+				grecaptcha.reset();
 				setTimeout(function() {
 					$.fancybox.close();
 				}, 1000);
@@ -42,6 +50,10 @@ $(document).ready(function() {
 	$('[data-fancybox="images"]').fancybox({
 		transitionEffect: "slide",
 		loop: false
+	});
+
+	$(".a-menu").click(function() {
+		$(".ham,.hamRotate,.ham1").classList.toggle('active');
 	});
 
 });

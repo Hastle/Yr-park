@@ -6,6 +6,7 @@
 		display: none;
 	}
 }
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -19,15 +20,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-#contacts .enter, #contacts .info {
-	border: none;
-}
-#contacts {
-	padding-bottom: 0;
-}
-#contacts form .form-ent, #contacts form textarea {
-	border: 1px solid #c9c9c9;
-}
+	#contacts .enter, #contacts .info {
+		border: none;
+	}
+	#contacts {
+		padding-bottom: 0;
+	}
+	#contacts form .form-ent, #contacts form textarea {
+		border: 1px solid #c9c9c9;
+	}
 }
 
 /* Custom, iPhone Retina */

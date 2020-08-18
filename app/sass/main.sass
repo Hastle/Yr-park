@@ -117,8 +117,14 @@ header
 	.nav-list
 		display: flex
 		justify-content: flex-end
-		align-content: center
+		align-items: center
 		height: 80px
+		.a-menu
+			background-color: #222
+			height: 50px
+			width: 50px
+			margin-right: 50px
+			display: none
 		.main-menu
 			list-style: none
 			display: flex
@@ -164,13 +170,18 @@ header
 /*==========  About  ==========*/
 #about
 	.about-fst
-		height: 250px
-		background-image: url(../img/top-bg.jpg)
+		height: 300px
+		background-image: url(../img/abt1.jpg)
 		background-position: center center
 		background-size: cover
 	.about-scnd
 		height: 250px
-		background-image: url(../img/top-bg.jpg)
+		background-image: url(../img/abt2.jpg)
+		background-position: center center
+		background-size: cover
+	.about-thr
+		height: 250px
+		background-image: url(../img/abt3.jpg)
 		background-position: center center
 		background-size: cover
 	.ticket
@@ -233,11 +244,14 @@ header
 	.info
 		padding: 40px 30px
 		border-right: 1px solid #c9c9c9
+		height: 100%
 	.pull
 		display: inline-block
 		i
 			color: $acent
 			margin-right: 10px
+	.captch-block
+		display: block
 	.soc-links
 		padding: 15px 0
 		display: none
@@ -276,6 +290,7 @@ header
 			+shadow
 			border: 1px solid  #40a941
 			color: #fff
+			margin-top: 15px
 			&:hover
 				background-color: #fff
 				color: $acent
