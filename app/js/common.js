@@ -33,12 +33,6 @@ $(document).ready(function() {
 
 	$(".scroll").mPageScroll2id();
 
-	$('.slick').slick({
-		dots: true,
-		infinite: true,
-		speed: 600,
-		slidesToShow: 1,
-	});
 
 	$('.popup-modal').magnificPopup({
 		type:'inline',

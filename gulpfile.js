@@ -31,12 +31,10 @@ gulp.task('sass', function(){
 var jsfiles = [
 'app/libs/jquery/jquery-1.11.1.min.js',
 'app/libs/parallax/parallax.min.js',
-'app/libs/magnific-popup/jquery.magnific-popup.min.js',
-'app/libs/page-scroll2id/jquery.malihu.PageScroll2id.js',
-'app/libs/wow/wow.js',
-'app/libs/slick/slick.min.js',
-'app/libs/waypoints/waypoints-1.6.2.min.js',
-'app/libs/fancybox/jquery.fancybox.min.js'
+'app/libs/magnific-popup/magnific-popup.min.js',
+'app/libs/scroll2id/pagescroll2id.min.js',
+'app/libs/wow/wow.min.js',
+'app/libs/fancybox/fancybox.min.js'
 
 ];
 

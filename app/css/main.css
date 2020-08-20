@@ -56,73 +56,6 @@ button:focus {
 .text-center {
   text-align: center; }
 
-/*==========  Owl-carousel  ==========*/
-.owl-carousel .owl-nav button.owl-next {
-  right: 0;
-  position: absolute; }
-
-.owl-nav i {
-  font-size: 25px;
-  padding: 5px; }
-
-.owl-dots {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 40px; }
-
-.owl-carousel button.owl-dot {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  width: 12px;
-  height: 12px;
-  margin: 5px;
-  background-color: #222;
-  -webkit-border-radius: 50%;
-          border-radius: 50%; }
-
-/*==========  Slick-slider  ==========*/
-.slick-slide {
-  outline: none !important; }
-
-.slick {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%; }
-
-.slick-dotted.slick-slider {
-  margin-bottom: 0; }
-
-.slick-dots {
-  bottom: 10px; }
-
-.slick-dots li button:before {
-  font-size: 9px;
-  color: #bed1d2; }
-
-.slick-dots li.slick-active button:before {
-  color: #fff;
-  -webkit-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s; }
-
-.slick-prev {
-  left: 15px; }
-
-.slick-next {
-  right: 15px; }
-
 /*==========  General  ==========*/
 section {
   padding: 100px 0;
@@ -325,7 +258,6 @@ header {
 #contacts {
   background-color: #efeeee; }
   #contacts .enter {
-    display: inline-block;
     border: 1px solid #c9c9c9;
     margin-top: 50px; }
   #contacts .info {
@@ -461,3 +393,5 @@ header {
     font-size: 30px; }
   .white-popup-block img {
     margin-top: 1em; }
+  .white-popup-block p {
+    font-size: 17px; }

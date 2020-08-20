@@ -15,7 +15,24 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	#contacts .info {
+		border: none;
+	}
+	#contacts .soc-links {
+		display: flex;
+		justify-content: center;
+	}
+	#contacts form {
+		padding: 35px 15px 0;
+	}
+	#contacts .info {
+		padding: 35px 15px 35px;
+	}
+	#contacts .captch-block {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -28,6 +45,12 @@
 	}
 	#contacts form .form-ent, #contacts form textarea {
 		border: 1px solid #c9c9c9;
+	}
+	#contacts .captch-block {
+		transform:scale(0.77);
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }
 
