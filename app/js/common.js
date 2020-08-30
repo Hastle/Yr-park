@@ -7,7 +7,11 @@ var onLoadHandler = function() {
 
 $(document).ready(function() {
 
-	new WOW().init();
+	wow = new WOW({
+		mobile: false
+	})
+
+	wow.init();
 
 	$("#feedback-1").submit(function() {
 		var response = grecaptcha.getResponse(captcha);

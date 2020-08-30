@@ -270,6 +270,8 @@ header {
     #contacts .pull i {
       color: #59c45a;
       margin-right: 10px; }
+    #contacts .pull a {
+      color: #000; }
   #contacts .captch-block {
     display: block; }
   #contacts .soc-links {
