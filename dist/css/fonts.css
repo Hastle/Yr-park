@@ -1,7 +1,7 @@
 /* font-family: "GothamRegular"; */
 @font-face {
 	font-family: "GothamRegular";
-	src: url("../fonts/Gotham/GothaProReg.otf");
+	src: url("../fonts/GothaProReg.otf");
 	font-style: normal;
 	font-weight: normal;
 	font-display: swap;
@@ -9,7 +9,7 @@
 /* font-family: "GothamBold"; */
 @font-face {
 	font-family: "GothamBold";
-	src: url("../fonts/Gotham/GothaProBol.otf");
+	src: url("../fonts/GothaProBol.otf");
 	font-style: normal;
 	font-weight: normal;
 	font-display: swap;
@@ -17,7 +17,7 @@
 /* font-family: "GothaProLig"; */
 @font-face {
 	font-family: "GothaProLig";
-	src: url("../fonts/Gotham/GothaProLig.otf");
+	src: url("../fonts/GothaProLig.otf");
 	font-style: normal;
 	font-weight: normal;
 	font-display: swap;
