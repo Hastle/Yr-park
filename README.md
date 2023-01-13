@@ -1,1 +1,1 @@
-Don't use task gulp build and update dist dir.
+Don't use task buildAll and update dist dir.
