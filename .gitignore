@@ -1,6 +1,6 @@
 /node_modules/
-# /dist/
 /.git/
 /app/css/
-/**/package-5.json
+/**/package-lock.json
 /**/*.DS_Store
+#/dist/
